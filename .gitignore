@@ -70,3 +70,4 @@ flycheck_*.el
 
 
 # End of https://www.toptal.com/developers/gitignore/api/clojure,emacs
+/hello-world-clj-http/.clj-kondo/

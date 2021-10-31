@@ -31,7 +31,8 @@
   (get-some-json-pooled)
   ;; Do I have to shutdown manually?
   (-> (Runtime/getRuntime)
-      (.addShutdownHook (Thread. #(shutdown-manager cm)))))
+      (.addShutdownHook (Thread. #(shutdown-manager cm))))
+  ,)
 
 ;; TODO: client-reuse for caching
 (def hclient (build-http-client {} false cm))
